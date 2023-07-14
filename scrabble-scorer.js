@@ -41,12 +41,9 @@ function initialPrompt() {
   return intro;
 }
 
-function simpleScore(word){
-   word = word.toUpperCase();
-   simpleScoreArray = word.split('');
-   letterPoints = simpleScoreArray.length
-   return letterPoints
- };
+function simpleScore(word) {
+  return word.length
+};
 
 function vowelBonusScore(word) {
   let vowels = ['A', 'E', 'I', 'O', 'U'];
