@@ -1,3 +1,1 @@
-function simpleScore(word) {
-  return word.length
-};
+scorer.runProgram();

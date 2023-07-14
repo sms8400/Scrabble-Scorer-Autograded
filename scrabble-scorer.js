@@ -78,7 +78,7 @@ const scoringAlgorithms = [
   {
     name: "Bonus Vowels",
     description: "Vowels are 3pts, consonants are 1 pt.",
-    scoreFunction: vowelBonusScore
+    scoreFunction: vowelBonusScorer
   },
   {
     name: "Scrabble",
@@ -94,6 +94,7 @@ function scorerPrompt() {
     console.log(`${i} - ${scoringAlgorithms[i].name}: ${scoringAlgorithms[i].description}`) 
     }
     let scoreQuestion = Number(input.question(`\nEnter 0, 1, or 2: `)); 
+    console.log(scoreQuestion)
     console.log(`Score for '${intro}': ${scoringAlgorithms[scoreQuestion].scoreFunction(intro)}`) 
   }{}
 
