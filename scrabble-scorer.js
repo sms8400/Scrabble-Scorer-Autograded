@@ -42,7 +42,7 @@ function simpleScorer(word) {
   return word.length
 };
 
-function vowelBonusScore(word) {
+function vowelBonusScorer(word) {
   let vowels = ['A', 'E', 'I', 'O', 'U'];
   let score = 0;
   word = word.toUpperCase();
@@ -127,7 +127,7 @@ module.exports = {
    transform: transform,
    oldPointStructure: oldPointStructure,
    simpleScorer: simpleScorer,
-   vowelBonusScore: vowelBonusScore,
+   vowelBonusScorer: vowelBonusScorer,
    scrabbleScore: scrabbleScore,
    scoringAlgorithms: scoringAlgorithms,
    newPointStructure: newPointStructure,
