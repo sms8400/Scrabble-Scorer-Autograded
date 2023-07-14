@@ -23,12 +23,10 @@ function oldScrabbleScorer(word) {
 		 if (oldPointStructure[pointValue].includes(word[i])) {
 			letterPoints += `Points for '${word[i]}': ${pointValue}\n`
 		 }
- 
 	  }
 	}
 	return letterPoints;
  }
-
 // your job is to finish writing these functions and variables that we've named //
 // don't change the names or your program won't work as expected. //
 
@@ -104,7 +102,7 @@ function transform(words) {
   for (let newOrder in words) {
     let simple = words[newOrder]
     for (let i = 0; i < simple.length; i++) {
-      newWordPoints[simple[i].toUpperCase()] = Number(newOrder);
+      newWordPoints[simple[i].toLowerCase()] = Number(newOrder);
     }
   }
   return newWordPoints;
