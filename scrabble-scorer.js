@@ -38,7 +38,7 @@ function initialPrompt() {
   return intro;
 }
 
-function simpleScore(word) {
+function simpleScorer(word) {
   return word.length
 };
 
