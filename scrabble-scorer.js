@@ -9,8 +9,8 @@ const oldPointStructure = {
   4: ['F', 'H', 'V', 'W', 'Y'],
   5: ['K'],
   8: ['J', 'X'],
-  10: ['Q', 'Z'],
-  0: [' ']
+  10: ['Q', 'Z']
+  
 };
 
 function oldScrabbleScorer(word) {
