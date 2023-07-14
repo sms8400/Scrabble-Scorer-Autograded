@@ -62,7 +62,7 @@ function vowelBonusScorer(word) {
 
 function scrabbleScore(word) {
   let score = 0;
-  word = word.toUpperCase();
+  word = word.toLowerCase();
   for (let i = 0; i < word.length; i++) {
     score += newPointStructure[word[i]];
   }  
@@ -94,7 +94,6 @@ function scorerPrompt() {
     console.log(`${i} - ${scoringAlgorithms[i].name}: ${scoringAlgorithms[i].description}`) 
     }
     let scoreQuestion = Number(input.question(`\nEnter 0, 1, or 2: `)); 
-    console.log(scoreQuestion)
     console.log(`Score for '${intro}': ${scoringAlgorithms[scoreQuestion].scoreFunction(intro)}`) 
   }{}
 
