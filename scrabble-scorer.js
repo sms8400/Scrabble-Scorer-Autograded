@@ -111,6 +111,7 @@ function transform(words) {
 
 let newPointStructure = transform(oldPointStructure);
 
+
 function runProgram() {
    initialPrompt();
    scorerPrompt();
