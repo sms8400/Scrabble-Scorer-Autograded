@@ -74,17 +74,17 @@ const scoringAlgorithms = [
     name: "Simple Score",
     description: "Each letter is worth 1 point.",
     scoreFunction: simpleScorer
-  },
+  };
   {
     name: "Bonus Vowels",
     description: "Vowels are 3pts, consonants are 1 pt.",
     scoreFunction: vowelBonusScorer
-  },
+  };
   {
     name: "Scrabble",
     description: "The traditional scoring algorithm.",
     scoreFunction: scrabbleScorer
-  },
+  };
 ];
 
 
