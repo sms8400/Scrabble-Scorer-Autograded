@@ -103,6 +103,7 @@ function scorerPrompt() {
   console.log (`Score for '${intro}': ${scoringAlgorithms[scorerPromptToSave].scoringFunction(intro)}`)
 }
 
+
 function transform(pointStructure) {
   let newPointStruct = {};
   for (key in pointStructure) {
