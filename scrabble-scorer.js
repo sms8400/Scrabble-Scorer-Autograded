@@ -128,7 +128,7 @@ module.exports = {
    oldPointStructure: oldPointStructure,
    simpleScorer: simpleScorer,
    vowelBonusScorer: vowelBonusScorer,
-   scrabbleScore: scrabbleScore,
+   scrabbleScorer: scrabbleScorer,
    scoringAlgorithms: scoringAlgorithms,
    newPointStructure: newPointStructure,
 	runProgram: runProgram,
