@@ -59,9 +59,6 @@ function vowelBonusScorer(word) {
   return letterPoints
 };
 
-// let letter = (input.question("Enter a scrabble word please: "));
-// letter = letter.toLowerCase();
-
 
 function scrabbleScorer(word) {
   word = word.toLowerCase()
