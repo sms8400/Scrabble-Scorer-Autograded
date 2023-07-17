@@ -95,7 +95,7 @@ function scorerPrompt() {
   for(let i = 0; i<scoringAlgorithms.length; i++){
     console.log(`${i} – ${scoringAlgorithms[i].name}: ${scoringAlgorithms[i].description}`)
   }
-  scorerPromptToSave = input.question("Enter 0, 1, or 2: ");
+ let scorerPromptToSave = input.question("Enter 0, 1, or 2: ");
   scorerPromptToSave = Number(scorerPromptToSave)
   while
    (scorerPromptToSave < 0 || scorerPromptToSave > 2 || isNaN(scorerPromoptToSave)){
