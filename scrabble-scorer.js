@@ -97,6 +97,11 @@ function scorerPrompt() {
   }
   scorerPromptToSave = input.question("Enter 0, 1, or 2: ");
   scorerPromptToSave = Number(scorerPromptToSave)
+  while
+   (scorerPromptToSave < 0 || scorerPromptToSave > 2 || isNaN(scorerPromoptToSave)){
+    scorerPromptToSave = input.question("You entered an incorrect number. Please Enter 0, 1, or 2: ");
+    scorerPromptToSave = Number(scorerPromptToSave)
+   }
   console.log (`Score for '${intro}': ${scoringAlgorithms[scorerPromptToSave].scorerFunction(intro)}`)
 }
  
